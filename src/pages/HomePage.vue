@@ -1,9 +1,9 @@
 <template>
   <div class="home-page">
     <div class="page-container">
-      <h1 class="page-title">🖧 Калькулятор подсетей</h1>
+      <h1 class="page-title">IP-калькулятор подсетей</h1>
       <p class="page-description">
-        Введите IP адрес и выберите сетевую маску для расчета параметров подсети
+        Введите IP-адрес и выберите маску подсети для расчёта сети
       </p>
       <SubnetCalculator />
     </div>
@@ -17,8 +17,8 @@ import SubnetCalculator from '../components/SubnetCalculator.vue'
 <style scoped>
 .home-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 40px 20px;
+  background-color: var(--color-white); /* ← белый фон */
+  padding: 50px 20px;
 }
 
 .page-container {
@@ -28,7 +28,7 @@ import SubnetCalculator from '../components/SubnetCalculator.vue'
 
 .page-title {
   text-align: center;
-  color: var(--color-white);
+  color: var(--color-primary-dark);
   font-size: 32px;
   margin-bottom: 16px;
   font-weight: 700;
@@ -36,9 +36,9 @@ import SubnetCalculator from '../components/SubnetCalculator.vue'
 
 .page-description {
   text-align: center;
-  color: var(--color-white);
+  color: var(--color-text);
   font-size: 18px;
   margin-bottom: 40px;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 </style>

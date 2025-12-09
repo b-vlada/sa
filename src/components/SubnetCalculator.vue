@@ -133,13 +133,13 @@ function calculate() {
 
 .form-label {
   font-weight: 600;
-  color: var(--color-black);
+  color: var(--color-text);
 }
 
 .form-input,
 .form-select {
   padding: 12px;
-  border: 2px solid var(--color-gray);
+  border: 2px solid var(--color-border);
   border-radius: 4px;
   font-size: 16px;
   transition: border-color 0.3s ease;
@@ -162,29 +162,30 @@ function calculate() {
 }
 
 .calculate-button {
-  padding: 12px 24px;
+  padding: 14px 28px;
   background-color: var(--color-primary);
   color: var(--color-white);
   border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 600;
+  border-radius: 50px; /* ← круглые края */
+  font-size: 17px;
+  font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .calculate-button:hover:not(:disabled) {
-  background-color: #0056a3;
+  background-color: var(--color-primary-dark);
 }
 
 .calculate-button:disabled {
-  background-color: var(--color-gray);
+  background-color: var(--color-border);
   cursor: not-allowed;
 }
 
 .results-section {
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: var(--color-background);
   border-radius: 8px;
   border-left: 4px solid var(--color-success);
 }
@@ -200,7 +201,7 @@ function calculate() {
   justify-content: space-between;
   align-items: center;
   padding: 8px 0;
-  border-bottom: 1px solid var(--color-gray);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .result-item:last-child {
@@ -209,7 +210,7 @@ function calculate() {
 
 .result-label {
   font-weight: 600;
-  color: var(--color-black);
+  color: var(--color-text);
 }
 
 .result-value {

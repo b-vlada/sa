@@ -8,12 +8,14 @@ import HomePage from './pages/HomePage.vue'
 
 <style>
 :root {
-  --color-primary: #006cbb;
-  --color-success: #01bd78;
-  --color-error: #d40019;
-  --color-white: #fff;
-  --color-gray: #ccc;
-  --color-black: #000;
+  --color-primary: #ff6b9d;
+  --color-primary-dark: #e03a70;
+  --color-success: #3ddc97;
+  --color-error: #ff6b6b;
+  --color-white: #ffffff;
+  --color-text: #4a4a4a;
+  --color-border: #f0d4de;
+  --color-background: #ffffff;
 }
 
 * {
@@ -25,6 +27,7 @@ import HomePage from './pages/HomePage.vue'
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: var(--color-black);
+  color: var(--color-text);
+  background-color: var(--color-background);
 }
 </style>
